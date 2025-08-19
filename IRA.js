@@ -1,11 +1,15 @@
 let course = document.querySelector("#course");
 course.addEventListener("click", () => {
   let openCourse = document.querySelector(".course_detail");
-  openCourse.style.display = "block";
+  window.location.href = './IRA_Pages/page1.html'
 });
+let overView = document.querySelector('.viewMain')
+overView.addEventListener('click',()=>{
+  window.location.href = 'IRA.html'
+})
 async function IRA() {
   try {
-    let IRA_Data = await fetch("IRA_Data.json");
+    let IRA_Data = await fetch("/IRA_Data.json");
     let comeData = await IRA_Data.json();
     let liveData = "";
     comeData.map((value) => {
