@@ -1,35 +1,30 @@
-let course = document.querySelector("#course");
-course.addEventListener("click", () => {
-  let openCourse = document.querySelector(".course_detail");
-  window.location.href = './IRA_Pages/page1.html'
-});
-let overView = document.querySelector('.viewMain')
-overView.addEventListener('click',()=>{
-  window.location.href = 'IRA.html'
-})
+let Data_IRA = 'IRA_Data.json'
 async function IRA() {
-  try {
-    let IRA_Data = await fetch("/IRA_Data.json");
-    let comeData = await IRA_Data.json();
-    let liveData = "";
-    comeData.map((value) => {
-      liveData = `<h4 class="IRA_program">${value.id}</h4>
-        <article class="course_About">
-          ${value.about}
-        </article>
-        <ul class="courseItem">
-          <li>${value.course1}</li>
-          <li>${value.course2}</li>
-          <li>${value.course3}</li>
-          <li>${value.course4}</li>
-          <li>${value.course5}</li>
-          <li>${value.course6}</li>
-          <li>${value.course7}</li>
-        </ul>`;
-    });
-    document.querySelector(".course_detail").innerHTML = liveData;
-  } catch (error) {
-    console.error("server Down!!!!", error);
-  }
+  let response = await fetch(Data_IRA);
+  let data = await response.json();
+  // -----html Data -------- //
+  let navSection = document.querySelector('.navbar');
+  data.navbar.forEach( item => {
+    navSection.innerHTML = `<div class="logo">
+        <img src="${item.logo_IRA}" alt="">
+      </div>
+      <!------Top Navbar Details------->
+      <ul class="navList">
+        <li class="items">${item.navItem1}</li>
+        <li class="items">${item.navItem2}</li>
+        <li class="items">${item.navItem3}</li>
+        <li class="items">${item.navItem4}</li>
+        <li class="items">${item.navItem5}</li>
+        <li class="items">${item.navItem6}</li>
+        <i id="search" class="${item.searchIcon}"></i>
+      </ul>
+      <!-----Login Details----->
+      <div class="login">
+        <p class="log">${item.loginBtn}</p>
+      </div>
+      <div class="sideBar">
+        <i class="${item.sideBar}"></i>
+      </div>`
+  });
 }
-IRA();
+IRA()

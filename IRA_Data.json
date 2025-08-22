@@ -1,17 +1,16 @@
-[
-  {
-    "id": "IRA Programs and Initiatives :-",
-    "about": "IRA Skill Varsity focuses on skilling, upskilling, and employability training across colleges and communities. With a state-wide presence and pan-India aspirations, the organization conducts industry-relevant programs that enhance both technical and soft skills.",
-    "course1": "SPOKEN ENGLISH AND WORKPLACE COMMUNICATION",
-    "course2": "DIGITAL LITERACY AND PRODUCTIVITY TOOLS",
-    "course3": "GST, TALLY, AND ACCOUNTING BASICS",
-    "course4": "DATA ANALYTICS AND DASHBOARD TOOLS",
-    "course5": "DESIGN THINKING AND INNOVATION",
-    "course6": "INTERVIEW & CAREER READINESS WORKSHOPS",
-    "course7" : "CRM TOOLS AND CUSTOMER SERVICE SKILLS"
-  },
-  {
-    "title1" : "IRA SKILL VARASITY<br/>EDUCATIONAL & CAREER DEVELOPMENT PLATFORM",
-    "about2" : "IRA Skill Varsity is an educational and career development platform initiated under the leadership of IRA Educational and Welfare Society (est. 2015) and IRA Consultancy and Research Pvt Ltd (est. 2023). With a focus on transforming lives through quality education, practical skills, and employability training, IRA Skill Varsity operates across the educational spectrum—from early childhood education to college-level job readiness programs.IRA bridges the learning-to-employment gap through strategic partnerships with colleges, state governments, and CSR-backed organizations. With a vision of creating accessible, impactful, and practical learning experiences, the organization ensures learners are job-ready, confident, and aligned with industry needs."
-  }
-]
+{
+  "navbar" : [
+    {
+      "logo_IRA" : "/IRA_assets/IRA.png",
+      "navItem1" : "ACADEMICS",
+      "navItem2" : "ADMISSIONS",
+      "navItem3" : "STUDENT LIFE",
+      "navItem4" : "TUTION FEE",
+      "navItem5" : "ABOUT",
+      "navItem6" : "FACULTY & RESEARCH",
+      "searchIcon" : "fa-solid fa-magnifying-glass",
+      "loginBtn" : "LOGIN",
+      "sideBar" : "fa-solid fa-magnifying-glass"
+    }
+  ]
+}
