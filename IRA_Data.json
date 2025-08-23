@@ -1,16 +1,93 @@
 {
-  "navbar" : [
+  "navbar": [
     {
-      "logo_IRA" : "/IRA_assets/IRA.png",
-      "navItem1" : "ACADEMICS",
-      "navItem2" : "ADMISSIONS",
-      "navItem3" : "STUDENT LIFE",
-      "navItem4" : "TUTION FEE",
-      "navItem5" : "ABOUT",
-      "navItem6" : "FACULTY & RESEARCH",
-      "searchIcon" : "fa-solid fa-magnifying-glass",
-      "loginBtn" : "LOGIN",
-      "sideBar" : "fa-solid fa-magnifying-glass"
+      "logo_IRA": "/IRA_assets/IRA.png",
+      "navItem1": "ACADEMICS",
+      "navItem2": "ADMISSIONS",
+      "navItem3": "STUDENT LIFE",
+      "navItem4": "TUTION FEE",
+      "navItem5": "ABOUT",
+      "navItem6": "FACULTY & RESEARCH",
+      "searchIcon": "fa-solid fa-magnifying-glass",
+      "loginBtn": "LOGIN",
+      "sideBar": "fa-solid fa-magnifying-glass"
+    }
+  ],
+  "listNav": [
+    {
+      "overView": "OverView",
+      "courses": "Courses",
+      "overView2": "&&&&",
+      "overView3": "$$$$$",
+      "platformName": "IRA SKILL VARASITY<br />EDUCATIONAL & CAREER DEVELOPMENT PLATFORM",
+      "abutPlatform": "IRA Skill Varsity is an educational and career development platform initiated under the leadership of IRA Educational and Welfare Society (est. 2015) and IRA Consultancy and Research Pvt Ltd (est. 2023). With a focus on transforming lives through quality education, practical skills, and employability training, IRA Skill Varsity operates across the educational spectrum—from early childhood education to college-level job readiness programs.",
+      "exploreIRA": "EXPLORE<br />COACHING TRAINING<br />PROGRAM"
+    }
+  ],
+  "IRA_learning": [
+    {
+      "learn1PNG": "/IRA_assets/learn1.webp",
+      "step1": "Step 1",
+      "learn": "Learn",
+      "ProcessLearn": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur quia quibusdam fugiat possimus, dicta sunt alias tenetur vitae non voluptate.",
+      "learnMore": "Learn More",
+      "learn2PNG": "/IRA_assets/learn1.webp"
+    },
+    {
+      "learn1PNG": "/IRA_assets/learn2.webp",
+      "step1": "Step 2",
+      "learn": "Learn",
+      "ProcessLearn": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur quia quibusdam fugiat possimus, dicta sunt alias tenetur vitae non voluptate.",
+      "learnMore": "Learn More",
+      "learn2PNG": "/IRA_assets/learn1.webp"
+    },
+    {
+      "learn1PNG": "/IRA_assets/learn3.webp",
+      "step1": "Step 3",
+      "learn": "Learn",
+      "ProcessLearn": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur quia quibusdam fugiat possimus, dicta sunt alias tenetur vitae non voluptate.",
+      "learnMore": "Learn More",
+      "learn2PNG": "/IRA_assets/learn1.webp"
+    },
+    {
+      "learn1PNG": "/IRA_assets/learn4.webp",
+      "step1": "Step 4",
+      "learn": "Learn",
+      "ProcessLearn": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur quia quibusdam fugiat possimus, dicta sunt alias tenetur vitae non voluptate.",
+      "learnMore": "Learn More",
+      "learn2PNG": "/IRA_assets/learn1.webp"
+    }
+  ],
+  "achievements": [
+    {
+      "achieveImpacts": "Achievements & Impact",
+      "aImage": "https://aviramcollegeofnursing.com/wp-content/uploads/2020/12/placement-840x450.jpg",
+      "achieveAbout": "12,000+ students trained across Andhra Pradesh, Telangana,Karnataka, and Tamil Nadu <br />1,000+ candidates placed through 100+ institutional collaborations with engineering, degree, and management colleges <br />Presence in both urban and rural learning environments <br /> Successful implementation of multiple CSR-funded and government-sponsored projects",
+      "aImage2": "https://thumbs.dreamstime.com/b/meeting-teamwork-concept-friendship-group-people-stack-hands-showing-unity-successful-negotiations-office-146646245.jpg",
+      "achieveAbout2": "Successful implementation of multiple CSR-funded and government-sponsored projects <br />In-college delivery aligned with academic calendars <br /> Real-time reporting and placement tracking <br /> Outcome-based training with certification and assessment"
+    }
+  ],
+  "IRA_Location": [
+    {
+      "location": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15225.770491600462!2d78.43157328715819!3d17.438516499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1755674594295!5m2!1sen!2sin"
+    }
+  ],
+  "opportunity_IRA": [
+    {
+      "heading": "Opportunity + Outcomes",
+      "optAbout": "Dynamic experiential opportunities plus high starting salaries add up to significant outcomes for Illinois Tech graduates.",
+      "stag1": "#1",
+      "stag2": "#1",
+      "stag3": "#1",
+      "stagAbout1" : "In Illinois for High <br />Earnings and Economic <br />Mobility",
+      "stagAbout2" : "In Illinois for Best <br />Salaries of Graduates",
+      "stagAbout3" : "Best Value School"
+
+    }
+  ],
+  "IRA_Fotter" : [
+    {
+      
     }
   ]
 }
