@@ -1,46 +1,72 @@
-let Data_IRA = 'IRA_Data.json'
+let Data_IRA = "IRA_Data.json";
 async function IRA() {
   let response = await fetch(Data_IRA);
   let data = await response.json();
   // -----html Data -------- //
-  let navSection = document.querySelector('.navbar');
-  let listIRA = document.querySelector('.CoursesList');
-  let learProcessIRA = document.querySelector('.learnProcess');
-  let AchieveIRA = document.querySelector('.cards');
-  let location_IRA = document.querySelector('.location');
-  let opportunity = document.querySelector('.opportunity');
-  let fotter = document.querySelector('.fot')
-  data.navbar.forEach( item => {
+  let navSection = document.querySelector(".navbar");
+  let listIRA = document.querySelector(".CoursesList");
+  let learProcessIRA = document.querySelector(".learnProcess");
+  let AchieveIRA = document.querySelector(".cards");
+  let location_IRA = document.querySelector(".location");
+  let opportunity = document.querySelector(".opportunity");
+  let fotter = document.querySelector(".fot");
+  let question_Answer = document.querySelector(".qName");
+  let QueAns = document.querySelector(".qAns");
+
+  data.navbar.forEach((item) => {
     navSection.innerHTML = `<div class="logo">
         <img src="${item.logo_IRA}" alt="">
       </div>
       <!------Top Navbar Details------->
       <ul class="navList">
-        <li class="items">${item.navItem1}</li>
-        <li class="items">${item.navItem2}</li>
-        <li class="items">${item.navItem3}</li>
-        <li class="items">${item.navItem4}</li>
-        <li class="items">${item.navItem5}</li>
-        <li class="items">${item.navItem6}</li>
+        <li id="academy">${item.navItem1}</li>
+        <li id="addmission">${item.navItem2}</li>
+        <li id="slife">${item.navItem3}</li>
+        <li id="tFee">${item.navItem4}</li>
+        <li id="about">${item.navItem5}</li>
+        <li id="fSearch">${item.navItem6}</li>
         <i id="search" class="${item.searchIcon}"></i>
       </ul>
-      <!-----Login Details----->
       <div class="login">
         <p class="log">${item.loginBtn}</p>
       </div>
       <div class="sideBar">
         <i class="${item.sideBar}"></i>
-      </div>`
+      </div>`;
   });
-  data.listNav.forEach( item => {
+  navSection.addEventListener("click", (e) => {
+    let EachTap = e.target;
+    if (EachTap.id === "academy") {
+      alert("page a");
+    }
+    if (EachTap.id === "addmission") {
+      alert("page b");
+    }
+    if (EachTap.id === "slife") {
+      alert("page c");
+    }
+    if (EachTap.id === "tFee") {
+      alert("page d");
+    }
+    if (EachTap.id === "about") {
+      alert("page e");
+    }
+    if (EachTap.id === "fSearch") {
+      alert("page f");
+    }
+  });
+  data.listNav.forEach((item) => {
     listIRA.innerHTML = `<div class="overView">
         <ul class="IRA_Focuses">
-          <li class="viewMain">${item.overView}</li>
-          <li id="course">${item.courses}</li>
-          <li>${item.overView2}</li>
-          <li>${item.overView3}</li>
+          <li id="ov">${item.overView}</li>
+          <li id="ov2" id="course">${item.courses}</li>
+          <li id="ov3">${item.overView2}</li>
+          <li class="qw" id="ov4">${item.overView3}</li>
         </ul>
       </div>
+       <div class="banner">
+      <img src="${item.iraBanner}" alt="">
+     </div>
       <div class="overView_IRA">
         <p class="ov1">
           ${item.platformName}
@@ -48,9 +74,24 @@ async function IRA() {
         <article class="ira_about">${item.abutPlatform}</article>
         <div class="explore">
           <p>${item.exploreIRA}</p>
-        </div>`
+        </div>`;
   });
-  data.IRA_learning.forEach( item => {
+  listIRA.addEventListener("click", (list) => {
+    const listTargert = list.target;
+    if (listTargert.id === "ov") {
+      alert("listView");
+    }
+    if (listTargert.id === "ov2") {
+      alert("listView");
+    }
+    if (listTargert.id === "ov3") {
+      alert("listView");
+    }
+    if (listTargert.id === "ov4") {
+      alert("listView");
+    }
+  });
+  data.IRA_learning.forEach((item) => {
     learProcessIRA.innerHTML += `<div class="cardPro">
           <div class="lpng">
             <img src="${item.learn1PNG}" alt="###" />
@@ -59,9 +100,9 @@ async function IRA() {
           <h3 class="learn">${item.learn}</h3>
           <article>${item.ProcessLearn}</article>
           <p class="lmore">${item.learnMore}></p>
-        </div>`
+        </div>`;
   });
-  data.achievements.forEach( item => {
+  data.achievements.forEach((item) => {
     AchieveIRA.innerHTML += `
      <h1 class="achive">${item.achieveImpacts}</h1>
         <div class="card1">
@@ -77,9 +118,9 @@ async function IRA() {
             src="${item.aImage2}"
             alt="******"
           />
-        </div>`
+        </div>`;
   });
-   data.IRA_Location.forEach( item => {
+  data.IRA_Location.forEach((item) => {
     location_IRA.innerHTML = `<iframe
         id="ira_location"
         src="${item.location}"
@@ -89,9 +130,9 @@ async function IRA() {
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>`
+      ></iframe>`;
   });
-  data.opportunity_IRA.forEach( item => {
+  data.opportunity_IRA.forEach((item) => {
     opportunity.innerHTML = `
     <div class="ou">
           <h1>${item.heading}</h1>
@@ -109,9 +150,37 @@ async function IRA() {
           <p>${item.stagAbout2}</p>
           <p>${item.stagAbout3}</p>
         </div>
-      </div>`
+      </div>`;
   });
-  data.IRA_Fotter.forEach( item => {
+  data.fq.forEach((item)=>{
+    question_Answer.innerHTML = `<h1>${item.qLogo}</h1>`
+  })
+  data.queAns.map((item)=>{
+    QueAns.innerHTML += `<div class="q1">
+          <div class="qMain">
+            <h4>${item.q1}</h4>
+            <i id="close" class="fa-solid fa-plus"></i>
+          </div>
+          <p class="${item.qAns}</p>
+        </div>`
+  })
+  QueAns.addEventListener('click', (event) => {
+  const main = event.target.closest('.qMain');
+  if (!main) return;
+
+  const allAnswers = QueAns.querySelectorAll('.qAnswer');
+  allAnswers.forEach(ans => ans.style.display = 'none');
+
+  const container = main.parentElement;
+  const answer = container.querySelector('.qAnswer');
+  if (answer) {
+    answer.style.display = 'block';
+  }
+});
+
+
+
+  data.IRA_Fotter.forEach((item) => {
     fotter.innerHTML = `
     <div class="message">
         <p class="sign">SIGN UP FOR IRA SKILL VARASITY</p>
@@ -154,7 +223,7 @@ async function IRA() {
           © 2016 - 2025 IRA SKILL VARASITY S.p.A. - All rights reserved. SIAE
           LICENCE
         </p>
-      </div>`
+      </div>`;
   });
 }
-IRA()
+IRA();

@@ -19,6 +19,7 @@
       "courses": "Courses",
       "overView2": "&&&&",
       "overView3": "$$$$$",
+      "iraBanner" : "/IRA_assets/iraBanner.jpeg",
       "platformName": "IRA SKILL VARASITY<br />EDUCATIONAL & CAREER DEVELOPMENT PLATFORM",
       "abutPlatform": "IRA Skill Varsity is an educational and career development platform initiated under the leadership of IRA Educational and Welfare Society (est. 2015) and IRA Consultancy and Research Pvt Ltd (est. 2023). With a focus on transforming lives through quality education, practical skills, and employability training, IRA Skill Varsity operates across the educational spectrum—from early childhood education to college-level job readiness programs.",
       "exploreIRA": "EXPLORE<br />COACHING TRAINING<br />PROGRAM"
@@ -61,9 +62,9 @@
   "achievements": [
     {
       "achieveImpacts": "Achievements & Impact",
-      "aImage": "https://aviramcollegeofnursing.com/wp-content/uploads/2020/12/placement-840x450.jpg",
+      "aImage": "./IRA_assets/ira1.jpeg",
       "achieveAbout": "12,000+ students trained across Andhra Pradesh, Telangana,Karnataka, and Tamil Nadu <br />1,000+ candidates placed through 100+ institutional collaborations with engineering, degree, and management colleges <br />Presence in both urban and rural learning environments <br /> Successful implementation of multiple CSR-funded and government-sponsored projects",
-      "aImage2": "https://thumbs.dreamstime.com/b/meeting-teamwork-concept-friendship-group-people-stack-hands-showing-unity-successful-negotiations-office-146646245.jpg",
+      "aImage2": "./IRA_assets/ira2.jpeg",
       "achieveAbout2": "Successful implementation of multiple CSR-funded and government-sponsored projects <br />In-college delivery aligned with academic calendars <br /> Real-time reporting and placement tracking <br /> Outcome-based training with certification and assessment"
     }
   ],
@@ -88,6 +89,25 @@
   "IRA_Fotter" : [
     {
       
+    }
+  ],
+  "fq" : [
+    {
+      "qLogo" : "Frequently <br />Asked Questions"
+    }
+  ],
+  "queAns" : [
+    {
+      "q1" : "Lorem ipsum dolor sit",
+      "qAns" : "lorem isa erlsry etus la por "
+    },
+    {
+      "q1" : "Lorem ipsum dolor sit",
+      "qAns" : "lorem isa erlsry etus la por "
+    },
+    {
+      "q1" : "Lorem ipsum dolor sit",
+      "qAns" : "lorem isa erlsry etus la por "
     }
   ]
 }
