@@ -1,4 +1,16 @@
 {
+  "whatsappCantact" : [
+    {
+      "contactNumber" : "https://wa.me/919581190462",
+      "whatsapp" : "/IRA_assets/whatsapp.png"
+    }
+  ],
+  "search" : [
+    {
+      "sIcon" : "fa-solid fa-magnifying-glass",
+      "closeIcon" : "fa-solid fa-xmark"
+    }
+  ],
   "navbar": [
     {
       "logo_IRA": "/IRA_assets/IRA.png",
@@ -9,8 +21,8 @@
       "navItem5": "ABOUT",
       "navItem6": "FACULTY & RESEARCH",
       "searchIcon": "fa-solid fa-magnifying-glass",
-      "loginBtn": "LOGIN",
-      "sideBar": "fa-solid fa-magnifying-glass"
+      "loginAccount": "fa-regular fa-circle-user",
+      "sideBar": "fa-solid fa-bars"
     }
   ],
   "listNav": [

@@ -3,7 +3,9 @@ async function IRA() {
   let response = await fetch(Data_IRA);
   let data = await response.json();
   // -----html Data -------- //
+   let contact = document.querySelector(".contacts");
   let navSection = document.querySelector(".navbar");
+  let navSearch = document.querySelector(".dSearch");
   let listIRA = document.querySelector(".CoursesList");
   let learProcessIRA = document.querySelector(".learnProcess");
   let AchieveIRA = document.querySelector(".cards");
@@ -13,6 +15,11 @@ async function IRA() {
   let question_Answer = document.querySelector(".qName");
   let QueAns = document.querySelector(".qAns");
 
+
+  data.whatsappCantact.forEach((item)=>{
+    contact.innerHTML = `
+    <a href="${item.contactNumber}"><img src="${item.whatsapp}" alt=""></a>`
+  })
   data.navbar.forEach((item) => {
     navSection.innerHTML = `<div class="logo">
         <img src="${item.logo_IRA}" alt="">
@@ -25,13 +32,11 @@ async function IRA() {
         <li id="tFee">${item.navItem4}</li>
         <li id="about">${item.navItem5}</li>
         <li id="fSearch">${item.navItem6}</li>
-        <i id="search" class="${item.searchIcon}"></i>
       </ul>
-      <div class="login">
-        <p class="log">${item.loginBtn}</p>
-      </div>
       <div class="sideBar">
-        <i class="${item.sideBar}"></i>
+        <i id="search" class="${item.searchIcon}"></i>
+        <i id="" class="${item.loginAccount}"></i>
+        <i id="sideMenu" class="${item.sideBar}"></i>
       </div>`;
   });
   navSection.addEventListener("click", (e) => {
@@ -54,7 +59,24 @@ async function IRA() {
     if (EachTap.id === "fSearch") {
       alert("page f");
     }
+    if (EachTap.id === "search") {
+      navSearch.style.display = "block";
+    }
   });
+   data.search.forEach((item) => {
+    navSearch.innerHTML = `
+    <div class="ipt">
+    <i id="sBar" class="${item.sIcon}"></i>
+    <input class="ser" type="text" name=""    placeholder="Search for Course...">
+    <i id="sClose" class="${item.closeIcon}"></i>
+  </div>`;
+  });
+  navSearch.addEventListener('click',(e)=>{
+    let tap = e.target;
+    if(tap.id === 'sClose'){
+      navSearch.style.display = "none";
+    }
+  })
   data.listNav.forEach((item) => {
     listIRA.innerHTML = `<div class="overView">
         <ul class="IRA_Focuses">
@@ -96,10 +118,12 @@ async function IRA() {
           <div class="lpng">
             <img src="${item.learn1PNG}" alt="###" />
           </div>
+          <div class="sc"> 
           <p>${item.step1}</p>
           <h3 class="learn">${item.learn}</h3>
-          <article>${item.ProcessLearn}</article>
+           <article>${item.ProcessLearn}</article>
           <p class="lmore">${item.learnMore}></p>
+          </div>
         </div>`;
   });
   data.achievements.forEach((item) => {
@@ -152,78 +176,76 @@ async function IRA() {
         </div>
       </div>`;
   });
-  data.fq.forEach((item)=>{
-    question_Answer.innerHTML = `<h1>${item.qLogo}</h1>`
-  })
-  data.queAns.map((item)=>{
+  data.fq.forEach((item) => {
+    question_Answer.innerHTML = `<h1>${item.qLogo}</h1>`;
+  });
+  data.queAns.map((item) => {
     QueAns.innerHTML += `<div class="q1">
           <div class="qMain">
             <h4>${item.q1}</h4>
             <i id="close" class="fa-solid fa-plus"></i>
           </div>
           <p class="${item.qAns}</p>
-        </div>`
-  })
-  QueAns.addEventListener('click', (event) => {
-  const main = event.target.closest('.qMain');
-  if (!main) return;
-
-  const allAnswers = QueAns.querySelectorAll('.qAnswer');
-  allAnswers.forEach(ans => ans.style.display = 'none');
-
-  const container = main.parentElement;
-  const answer = container.querySelector('.qAnswer');
-  if (answer) {
-    answer.style.display = 'block';
-  }
-});
-
-
-
-  data.IRA_Fotter.forEach((item) => {
-    fotter.innerHTML = `
-    <div class="message">
-        <p class="sign">SIGN UP FOR IRA SKILL VARASITY</p>
-        <p class="ll">Get exclusive updates on the collection's launch,</p>
-        <p class="ll">
-          personalized communication and the House's latest news.
-        </p>
-      </div>
-      <div class="content">
-        <div class="box1">
-          <p class="s-head">MAYWE HELP YOU</p>
-          <p>Contact Us</p>
-          <p>My Order</p>
-          <p>FAQs</p>
-          <p>Email Unsubcribe</p>
-          <p>site map</p>
-        </div>
-        <div class="box2">
-          <p class="s-head">THE COMPANY</p>
-          <p>About IRA</p>
-          <p>IRA Ethics</p>
-          <p>legal</p>
-          <p>privacy & cookies policy</p>
-          <p>Cookies settings</p>
-          <p>corparate information</p>
-          <p>Accesibility state statement</p>
-        </div>
-        <div class="box3">
-          <p class="s-head">IRA SERVICE</p>
-          <p>Discover our service</p>
-          <p>Book an appointment</p>
-          <p>Collect in store</p>
-        </div>
-      </div>
-      <div class="f-logo">
-        <p class="f-logo1">IRA <br />INSTITUTION</p>
-      </div>
-      <div class="fot-i">
-        <p>
-          © 2016 - 2025 IRA SKILL VARASITY S.p.A. - All rights reserved. SIAE
-          LICENCE
-        </p>
-      </div>`;
+        </div>`;
   });
+  QueAns.addEventListener("click", (event) => {
+    const main = event.target.closest(".qMain");
+    if (!main) return;
+
+    const allAnswers = QueAns.querySelectorAll(".qAnswer");
+    allAnswers.forEach((ans) => (ans.style.display = "none"));
+
+    const container = main.parentElement;
+    const answer = container.querySelector(".qAnswer");
+    if (answer) {
+      answer.style.display = "block";
+    }
+  });
+
+  // data.IRA_Fotter.forEach((item) => {
+  //   fotter.innerHTML = `
+  //   <div class="message">
+  //       <p class="sign">SIGN UP FOR IRA SKILL VARASITY</p>
+  //       <p class="ll">Get exclusive updates on the collection's launch,</p>
+  //       <p class="ll">
+  //         personalized communication and the House's latest news.
+  //       </p>
+  //     </div>
+  //     <div class="content">
+  //       <div class="box1">
+  //         <p class="s-head">MAYWE HELP YOU</p>
+  //         <p>Contact Us</p>
+  //         <p>My Order</p>
+  //         <p>FAQs</p>
+  //         <p>Email Unsubcribe</p>
+  //         <p>site map</p>
+  //       </div>
+  //       <div class="box2">
+  //         <p class="s-head">THE COMPANY</p>
+  //         <p>About IRA</p>
+  //         <p>IRA Ethics</p>
+  //         <p>legal</p>
+  //         <p>privacy & cookies policy</p>
+  //         <p>Cookies settings</p>
+  //         <p>corparate information</p>
+  //         <p>Accesibility state statement</p>
+  //       </div>
+  //       <div class="box3">
+  //         <p class="s-head">IRA SERVICE</p>
+  //         <p>Discover our service</p>
+  //         <p>Book an appointment</p>
+  //         <p>Collect in store</p>
+  //       </div>
+  //     </div>
+  //     <div class="f-logo">
+  //       <p class="f-logo1">IRA <br />INSTITUTION</p>
+  //     </div>
+  //     <div class="fot-i">
+  //       <p>
+  //         © 2016 - 2025 IRA SKILL VARASITY S.p.A. - All rights reserved. SIAE
+  //         LICENCE
+  //       </p>
+  //     </div>`;
+  // });
 }
 IRA();
