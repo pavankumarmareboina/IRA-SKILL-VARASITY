@@ -20,6 +20,7 @@
       "navItem4": "TUTION FEE",
       "navItem5": "ABOUT",
       "navItem6": "FACULTY & RESEARCH",
+      "navClose": "fa-solid fa-xmark",
       "searchIcon": "fa-solid fa-magnifying-glass",
       "loginAccount": "fa-regular fa-circle-user",
       "sideBar": "fa-solid fa-bars"

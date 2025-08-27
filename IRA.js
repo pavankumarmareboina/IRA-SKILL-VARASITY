@@ -32,6 +32,7 @@ async function IRA() {
         <li id="tFee">${item.navItem4}</li>
         <li id="about">${item.navItem5}</li>
         <li id="fSearch">${item.navItem6}</li>
+        <i id="navClose" class="${item.navClose}"></i>
       </ul>
       <div class="sideBar">
         <i id="search" class="${item.searchIcon}"></i>
@@ -62,6 +63,15 @@ async function IRA() {
     if (EachTap.id === "search") {
       navSearch.style.display = "block";
     }
+    let sideNav = document.querySelector('#sideMenu');
+    let phoneNav = document.querySelector('.navList')
+    let closeNav = document.querySelector('#navClose')
+    sideNav.addEventListener('click',()=>{
+      phoneNav.style.display = 'block'
+    })
+    closeNav.addEventListener('click',()=>{
+      phoneNav.style.display = 'none'
+    })
   });
    data.search.forEach((item) => {
     navSearch.innerHTML = `
