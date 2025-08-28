@@ -14,7 +14,7 @@ async function IRA() {
   let fotter = document.querySelector(".fot");
   let question_Answer = document.querySelector(".qName");
   let QueAns = document.querySelector(".qAns");
-  let AcademicProgram = document.querySelector('.Aprograms');
+  let aca = document.querySelector('.academicIRA');
 
 
   data.navbar.map((item) => {
@@ -181,30 +181,18 @@ async function IRA() {
     contact.innerHTML = `
     <a href="${item.contactNumber}"><img src="${item.whatsapp}" alt=""></a>`
   })
+  data.academic.map((item)=>{
+    aca.innerHTML = `
+    <div class="aca">
+        <h1>${item.AcademicInfo}</h1>
+      </div>
+      <div class="AboutAca">
+        <article>${item.acaAbout}</article>
+      </div>
+      <div class="programsAca">
+        <p>${item.programList}</p>
+      </div>
+    `
+  })
 }
 IRA();
-
-async function fet() {
-  let res = await fetch('IRA_Data.json');
-  let come = await res.json();
-   let academi = document.querySelector('.Aprograms');
-
-   try{
-    come.academic.forEach((aca)=>{
-    academi.innerHTML = `
-    <div class="academic">
-        <h1>${aca.AcademicInfo}</h1>
-      </div>
-      <div>
-        <article>
-          ${aca.acaAbout}
-      </div>
-      <div class="prog">
-        <h3>${aca.programList}</h3>
-      </div>`
-   })
-   }catch(err){
-    console.log(err)
-   }
-}
-fet()
