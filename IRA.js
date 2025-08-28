@@ -1,4 +1,4 @@
-let Data_IRA = "IRA_Data.json";
+let Data_IRA = "/data.json";
 async function IRA() {
   let response = await fetch(Data_IRA);
   let data = await response.json();
@@ -14,24 +14,21 @@ async function IRA() {
   let fotter = document.querySelector(".fot");
   let question_Answer = document.querySelector(".qName");
   let QueAns = document.querySelector(".qAns");
+  let AcademicProgram = document.querySelector('.Aprograms');
 
 
-  data.whatsappCantact.forEach((item)=>{
-    contact.innerHTML = `
-    <a href="${item.contactNumber}"><img src="${item.whatsapp}" alt=""></a>`
-  })
-  data.navbar.forEach((item) => {
+  data.navbar.map((item) => {
     navSection.innerHTML = `<div class="logo">
         <img src="${item.logo_IRA}" alt="">
       </div>
       <!------Top Navbar Details------->
       <ul class="navList">
-        <li id="academy">${item.navItem1}</li>
-        <li id="addmission">${item.navItem2}</li>
-        <li id="slife">${item.navItem3}</li>
-        <li id="tFee">${item.navItem4}</li>
-        <li id="about">${item.navItem5}</li>
-        <li id="fSearch">${item.navItem6}</li>
+      <li><a href="/pages/academic.html">${item.navItem1}</a></li>
+      <li><a href="/pages/addmission.html">${item.navItem2}</a></li>
+      <li><a href="/pages/studentLife.html">${item.navItem3}</a></li>
+      <li><a href="/pages/tuition.html">${item.navItem4}</a></li>
+      <li><a href="/pages/about.html">${item.navItem5}</a></li>
+      <li><a href="/pages/faculty.html">${item.navItem6}</a></li>
         <i id="navClose" class="${item.navClose}"></i>
       </ul>
       <div class="sideBar">
@@ -42,24 +39,6 @@ async function IRA() {
   });
   navSection.addEventListener("click", (e) => {
     let EachTap = e.target;
-    if (EachTap.id === "academy") {
-      alert("page a");
-    }
-    if (EachTap.id === "addmission") {
-      alert("page b");
-    }
-    if (EachTap.id === "slife") {
-      alert("page c");
-    }
-    if (EachTap.id === "tFee") {
-      alert("page d");
-    }
-    if (EachTap.id === "about") {
-      alert("page e");
-    }
-    if (EachTap.id === "fSearch") {
-      alert("page f");
-    }
     if (EachTap.id === "search") {
       navSearch.style.display = "block";
     }
@@ -132,7 +111,7 @@ async function IRA() {
           <p>${item.step1}</p>
           <h3 class="learn">${item.learn}</h3>
            <article>${item.ProcessLearn}</article>
-          <p class="lmore">${item.learnMore}></p>
+          <p class="lmore">${item.learnMore}</p>
           </div>
         </div>`;
   });
@@ -195,67 +174,37 @@ async function IRA() {
             <h4>${item.q1}</h4>
             <i id="close" class="fa-solid fa-plus"></i>
           </div>
-          <p class="${item.qAns}</p>
+          <p class="${item.ans}</p>
         </div>`;
   });
-  QueAns.addEventListener("click", (event) => {
-    const main = event.target.closest(".qMain");
-    if (!main) return;
-
-    const allAnswers = QueAns.querySelectorAll(".qAnswer");
-    allAnswers.forEach((ans) => (ans.style.display = "none"));
-
-    const container = main.parentElement;
-    const answer = container.querySelector(".qAnswer");
-    if (answer) {
-      answer.style.display = "block";
-    }
-  });
-
-  // data.IRA_Fotter.forEach((item) => {
-  //   fotter.innerHTML = `
-  //   <div class="message">
-  //       <p class="sign">SIGN UP FOR IRA SKILL VARASITY</p>
-  //       <p class="ll">Get exclusive updates on the collection's launch,</p>
-  //       <p class="ll">
-  //         personalized communication and the House's latest news.
-  //       </p>
-  //     </div>
-  //     <div class="content">
-  //       <div class="box1">
-  //         <p class="s-head">MAYWE HELP YOU</p>
-  //         <p>Contact Us</p>
-  //         <p>My Order</p>
-  //         <p>FAQs</p>
-  //         <p>Email Unsubcribe</p>
-  //         <p>site map</p>
-  //       </div>
-  //       <div class="box2">
-  //         <p class="s-head">THE COMPANY</p>
-  //         <p>About IRA</p>
-  //         <p>IRA Ethics</p>
-  //         <p>legal</p>
-  //         <p>privacy & cookies policy</p>
-  //         <p>Cookies settings</p>
-  //         <p>corparate information</p>
-  //         <p>Accesibility state statement</p>
-  //       </div>
-  //       <div class="box3">
-  //         <p class="s-head">IRA SERVICE</p>
-  //         <p>Discover our service</p>
-  //         <p>Book an appointment</p>
-  //         <p>Collect in store</p>
-  //       </div>
-  //     </div>
-  //     <div class="f-logo">
-  //       <p class="f-logo1">IRA <br />INSTITUTION</p>
-  //     </div>
-  //     <div class="fot-i">
-  //       <p>
-  //         © 2016 - 2025 IRA SKILL VARASITY S.p.A. - All rights reserved. SIAE
-  //         LICENCE
-  //       </p>
-  //     </div>`;
-  // });
+  data.whatsappCantact.forEach((item)=>{
+    contact.innerHTML = `
+    <a href="${item.contactNumber}"><img src="${item.whatsapp}" alt=""></a>`
+  })
 }
 IRA();
+
+async function fet() {
+  let res = await fetch('IRA_Data.json');
+  let come = await res.json();
+   let academi = document.querySelector('.Aprograms');
+
+   try{
+    come.academic.forEach((aca)=>{
+    academi.innerHTML = `
+    <div class="academic">
+        <h1>${aca.AcademicInfo}</h1>
+      </div>
+      <div>
+        <article>
+          ${aca.acaAbout}
+      </div>
+      <div class="prog">
+        <h3>${aca.programList}</h3>
+      </div>`
+   })
+   }catch(err){
+    console.log(err)
+   }
+}
+fet()

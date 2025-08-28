@@ -99,11 +99,6 @@
 
     }
   ],
-  "IRA_Fotter" : [
-    {
-      
-    }
-  ],
   "fq" : [
     {
       "qLogo" : "Frequently <br />Asked Questions"
@@ -112,15 +107,66 @@
   "queAns" : [
     {
       "q1" : "Lorem ipsum dolor sit",
-      "qAns" : "lorem isa erlsry etus la por "
+      "ans" : "lorem isa erlsry etus la por "
     },
     {
       "q1" : "Lorem ipsum dolor sit",
-      "qAns" : "lorem isa erlsry etus la por "
+      "ans" : "lorem isa erlsry etus la por "
     },
     {
       "q1" : "Lorem ipsum dolor sit",
-      "qAns" : "lorem isa erlsry etus la por "
+      "ans" : "lorem isa erlsry etus la por "
+    }
+  ],
+  "academic" : [
+    {
+      "AcademicInfo" : "ACADEMICS",
+      "acaAbout" : "IRA Skill Varsity focuses on skilling, upskilling, and employability training across colleges and communities. With state-wide presence and pan-India aspirations, the organization conducts industry-relevant programs that enhance both technical and soft skills.",
+      "programList" : "Programs and Initiatives :-"
+    }
+  ],
+  "programAcademic" : [
+    {
+      "programIMG" : "",
+      "programName" : "Spoken English and Workplace Communication",
+      "programDetail" : "",
+      "ProgramExplore" : ""
+    },
+    {
+      "programIMG" : "",
+      "programName" : "Digital Literacy and Productivity Tools",
+      "programDetail" : "",
+      "ProgramExplore" : ""
+    },
+    {
+      "programIMG" : "",
+      "programName" : "GST, Tally, and Accounting Basics",
+      "programDetail" : "",
+      "ProgramExplore" : ""
+    },
+    {
+      "programIMG" : "",
+      "programName" : "Data Analytics and Dashboard Tools",
+      "programDetail" : "",
+      "ProgramExplore" : ""
+    },
+    {
+      "programIMG" : "",
+      "programName" : "Design Thinking and Innovation",
+      "programDetail" : "",
+      "ProgramExplore" : ""
+    },
+    {
+      "programIMG" : "",
+      "programName" : "Interview & Career Readiness Workshops",
+      "programDetail" : "",
+      "ProgramExplore" : ""
+    },
+    {
+      "programIMG" : "",
+      "programName" : "CRM Tools and Customer Service Skills",
+      "programDetail" : "",
+      "ProgramExplore" : ""
     }
   ]
 }
