@@ -127,46 +127,51 @@
   ],
   "programAcademic" : [
     {
-      "programIMG" : "",
+      "programIMG" : "https://dataspaceacademy.com/_next/image?url=https%3A%2F%2Fblog.dataspaceacademy.com%2Fwp-content%2Fuploads%2F2024%2F01%2FSpoken-English-is-Good-What-About-English-for-Business-Communication.jpg&w=1200&q=75",
       "programName" : "Spoken English and Workplace Communication",
-      "programDetail" : "",
-      "ProgramExplore" : ""
+      "programDetail" : "Spoken English acts as a global business lingua franca—boosting employability, facilitating clarity in digital platforms, and supporting confident interaction across cultural and global teams.",
+      "ProgramExplore" : "JOIN NOW"
     },
     {
-      "programIMG" : "",
+      "programIMG" : "https://www.ttro.com/wp-content/uploads/2022/06/digital_literacy_diagram.png",
       "programName" : "Digital Literacy and Productivity Tools",
-      "programDetail" : "",
-      "ProgramExplore" : ""
+      "programDetail" : "Spoken English acts as a global business lingua franca—boosting employability, facilitating clarity in digital platforms, and supporting confident interaction across cultural and global teams.",
+      "ProgramExplore" : "JOIN NOW"
     },
     {
-      "programIMG" : "",
+      "programIMG" : "https://www.gtiaindia.org/assets/images/blog/tally-erp-9-certificate-course-08-07-2024.jpg",
       "programName" : "GST, Tally, and Accounting Basics",
-      "programDetail" : "",
-      "ProgramExplore" : ""
+      "programDetail" : "Spoken English acts as a global business lingua franca—boosting employability, facilitating clarity in digital platforms, and supporting confident interaction across cultural and global teams.",
+      "ProgramExplore" : "JOIN NOW"
     },
     {
-      "programIMG" : "",
+      "programIMG" : "https://www.questionpro.com/blog/wp-content/uploads/2024/03/Data-Analysis-Tools.jpg",
       "programName" : "Data Analytics and Dashboard Tools",
-      "programDetail" : "",
-      "ProgramExplore" : ""
+      "programDetail" : "Spoken English acts as a global business lingua franca—boosting employability, facilitating clarity in digital platforms, and supporting confident interaction across cultural and global teams.",
+      "ProgramExplore" : "JOIN NOW"
     },
     {
-      "programIMG" : "",
+      "programIMG" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfuUPeRgUKAU3uoJBnuE9orfK96TT-rzo3jw&s",
       "programName" : "Design Thinking and Innovation",
-      "programDetail" : "",
-      "ProgramExplore" : ""
+      "programDetail" : "Spoken English acts as a global business lingua franca—boosting employability, facilitating clarity in digital platforms, and supporting confident interaction across cultural and global teams.",
+      "ProgramExplore" : "JOIN NOW"
     },
     {
-      "programIMG" : "",
+      "programIMG" : "https://ecdn.teacherspayteachers.com/thumbitem/job-interview-9097107-1710860355/original-9097107-1.jpg",
       "programName" : "Interview & Career Readiness Workshops",
-      "programDetail" : "",
-      "ProgramExplore" : ""
+      "programDetail" : "Spoken English acts as a global business lingua franca—boosting employability, facilitating clarity in digital platforms, and supporting confident interaction across cultural and global teams.",
+      "ProgramExplore" : "JOIN NOW"
     },
     {
-      "programIMG" : "",
+      "programIMG" : "https://cdn-cchkmpj.nitrocdn.com/CJXGnJvCvbQYOSNVvxpLvOYcHhpJDKbH/assets/images/optimized/rev-0d49871/ossisto.com/wp-content/uploads/2023/05/Types-of-CRM-Software.webp",
       "programName" : "CRM Tools and Customer Service Skills",
-      "programDetail" : "",
-      "ProgramExplore" : ""
+      "programDetail" : "Spoken English acts as a global business lingua franca—boosting employability, facilitating clarity in digital platforms, and supporting confident interaction across cultural and global teams.",
+      "ProgramExplore" : "JOIN NOW"
+    }
+  ],
+  "courseTerms" : [
+    {
+      "terms" : "Programs are designed to meet learners where they are—with hybrid formats (online + classroom), engaging learning material, and guided assessments. IRA uses a mix of assessments, assignments, mock interviews, and live projects to ensure outcomes."
     }
   ]
 }

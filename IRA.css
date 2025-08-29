@@ -3,7 +3,8 @@ html {
 }
 body {
   color: white;
-  background-color: #000000;
+  /* background: linear-gradient(90deg,black ,rgb(70, 120, 105),black); */
+  background-color: black;
 }
 * {
   list-style: none;
